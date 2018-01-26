@@ -325,9 +325,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689e7d3e9472524408492512cd45e511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 50
-  turnSpeed: 20
-  jumpHeight: 10
+  moveSpeed: 30
+  turnSpeed: 200
+  jumpHeight: 50
 --- !u!23 &311175694
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -406,7 +406,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!1 &761932233
 GameObject:
   m_ObjectHideFlags: 0
