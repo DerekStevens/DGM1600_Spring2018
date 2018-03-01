@@ -1,0 +1,345 @@
+fileFormatVersion: 2
+guid: bcf88f58c7d865d4a9d6f1b769779fb9
+timeCreated: 1517537100
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Hood
+    100002: Hood 1
+    100004: L_Armrest
+    100006: L_Armrest 1
+    100008: L_Back
+    100010: L_Headlight
+    100012: L_Headlight 1
+    100014: L_Holder
+    100016: L_Hpin
+    100018: L_Windshield
+    100020: MainBody
+    100022: MainBody 1
+    100024: MainBody 2
+    100026: MainBody 3
+    100028: //RootNode
+    100030: R_Armrest
+    100032: R_Armrest 1
+    100034: R_Back
+    100036: R_Headlight
+    100038: R_Headlight 1
+    100040: R_Holder
+    100042: R_Hpin
+    100044: R_Vpin
+    100046: R_Windshield
+    100048: RF_Axle
+    100050: RF_Axle 1
+    100052: RF_Rim
+    100054: RF_Rim 1
+    100056: RF_Spokes
+    100058: RF_Spokes 1
+    100060: RF_Tire
+    100062: RF_Tire 1
+    100064: RF_Tire 2
+    100066: RF_Tire 3
+    100068: RR_Axle
+    100070: RR_Axle 1
+    100072: RR_Rim
+    100074: RR_Rim 1
+    100076: RR_Spokes
+    100078: RR_Spokes 1
+    100080: RR_Tire
+    100082: RR_Tire 1
+    100084: RR_Tire 2
+    100086: RR_Tire 3
+    100088: Seat_Back
+    100090: Seat_Back 1
+    100092: Seat_Back 2
+    100094: Seat_Back 3
+    100096: Seat_Bottom
+    100098: Seat_Bottom 1
+    100100: Seat_Bottom 2
+    100102: Seat_Bottom 3
+    100104: Vpin
+    400000: Hood
+    400002: Hood 1
+    400004: L_Armrest
+    400006: L_Armrest 1
+    400008: L_Back
+    400010: L_Headlight
+    400012: L_Headlight 1
+    400014: L_Holder
+    400016: L_Hpin
+    400018: L_Windshield
+    400020: MainBody
+    400022: MainBody 1
+    400024: MainBody 2
+    400026: MainBody 3
+    400028: //RootNode
+    400030: R_Armrest
+    400032: R_Armrest 1
+    400034: R_Back
+    400036: R_Headlight
+    400038: R_Headlight 1
+    400040: R_Holder
+    400042: R_Hpin
+    400044: R_Vpin
+    400046: R_Windshield
+    400048: RF_Axle
+    400050: RF_Axle 1
+    400052: RF_Rim
+    400054: RF_Rim 1
+    400056: RF_Spokes
+    400058: RF_Spokes 1
+    400060: RF_Tire
+    400062: RF_Tire 1
+    400064: RF_Tire 2
+    400066: RF_Tire 3
+    400068: RR_Axle
+    400070: RR_Axle 1
+    400072: RR_Rim
+    400074: RR_Rim 1
+    400076: RR_Spokes
+    400078: RR_Spokes 1
+    400080: RR_Tire
+    400082: RR_Tire 1
+    400084: RR_Tire 2
+    400086: RR_Tire 3
+    400088: Seat_Back
+    400090: Seat_Back 1
+    400092: Seat_Back 2
+    400094: Seat_Back 3
+    400096: Seat_Bottom
+    400098: Seat_Bottom 1
+    400100: Seat_Bottom 2
+    400102: Seat_Bottom 3
+    400104: Vpin
+    2300000: Hood
+    2300002: Hood 1
+    2300004: L_Armrest
+    2300006: L_Armrest 1
+    2300008: L_Back
+    2300010: L_Headlight
+    2300012: L_Headlight 1
+    2300014: L_Holder
+    2300016: L_Hpin
+    2300018: L_Windshield
+    2300020: MainBody
+    2300022: MainBody 1
+    2300024: MainBody 2
+    2300026: MainBody 3
+    2300028: R_Armrest
+    2300030: R_Armrest 1
+    2300032: R_Back
+    2300034: R_Headlight
+    2300036: R_Headlight 1
+    2300038: R_Holder
+    2300040: R_Hpin
+    2300042: R_Vpin
+    2300044: R_Windshield
+    2300046: RF_Axle
+    2300048: RF_Axle 1
+    2300050: RF_Rim
+    2300052: RF_Rim 1
+    2300054: RF_Spokes
+    2300056: RF_Spokes 1
+    2300058: RF_Tire
+    2300060: RF_Tire 1
+    2300062: RF_Tire 2
+    2300064: RF_Tire 3
+    2300066: RR_Axle
+    2300068: RR_Axle 1
+    2300070: RR_Rim
+    2300072: RR_Rim 1
+    2300074: RR_Spokes
+    2300076: RR_Spokes 1
+    2300078: RR_Tire
+    2300080: RR_Tire 1
+    2300082: RR_Tire 2
+    2300084: RR_Tire 3
+    2300086: Seat_Back
+    2300088: Seat_Back 1
+    2300090: Seat_Back 2
+    2300092: Seat_Back 3
+    2300094: Seat_Bottom
+    2300096: Seat_Bottom 1
+    2300098: Seat_Bottom 2
+    2300100: Seat_Bottom 3
+    2300102: Vpin
+    3300000: Hood
+    3300002: Hood 1
+    3300004: L_Armrest
+    3300006: L_Armrest 1
+    3300008: L_Back
+    3300010: L_Headlight
+    3300012: L_Headlight 1
+    3300014: L_Holder
+    3300016: L_Hpin
+    3300018: L_Windshield
+    3300020: MainBody
+    3300022: MainBody 1
+    3300024: MainBody 2
+    3300026: MainBody 3
+    3300028: R_Armrest
+    3300030: R_Armrest 1
+    3300032: R_Back
+    3300034: R_Headlight
+    3300036: R_Headlight 1
+    3300038: R_Holder
+    3300040: R_Hpin
+    3300042: R_Vpin
+    3300044: R_Windshield
+    3300046: RF_Axle
+    3300048: RF_Axle 1
+    3300050: RF_Rim
+    3300052: RF_Rim 1
+    3300054: RF_Spokes
+    3300056: RF_Spokes 1
+    3300058: RF_Tire
+    3300060: RF_Tire 1
+    3300062: RF_Tire 2
+    3300064: RF_Tire 3
+    3300066: RR_Axle
+    3300068: RR_Axle 1
+    3300070: RR_Rim
+    3300072: RR_Rim 1
+    3300074: RR_Spokes
+    3300076: RR_Spokes 1
+    3300078: RR_Tire
+    3300080: RR_Tire 1
+    3300082: RR_Tire 2
+    3300084: RR_Tire 3
+    3300086: Seat_Back
+    3300088: Seat_Back 1
+    3300090: Seat_Back 2
+    3300092: Seat_Back 3
+    3300094: Seat_Bottom
+    3300096: Seat_Bottom 1
+    3300098: Seat_Bottom 2
+    3300100: Seat_Bottom 3
+    3300102: Vpin
+    4300000: MainBody
+    4300002: MainBody
+    4300004: MainBody
+    4300006: MainBody
+    4300008: Hood
+    4300010: Hood
+    4300012: Seat_Bottom
+    4300014: Seat_Bottom
+    4300016: L_Armrest
+    4300018: R_Armrest
+    4300020: Seat_Back
+    4300022: Seat_Back
+    4300024: Seat_Bottom
+    4300026: Seat_Bottom
+    4300028: R_Armrest
+    4300030: L_Armrest
+    4300032: Seat_Back
+    4300034: Seat_Back
+    4300036: L_Windshield
+    4300038: L_Holder
+    4300040: L_Hpin
+    4300042: Vpin
+    4300044: R_Windshield
+    4300046: R_Hpin
+    4300048: R_Vpin
+    4300050: R_Holder
+    4300052: RF_Spokes
+    4300054: RF_Rim
+    4300056: RF_Tire
+    4300058: RF_Tire
+    4300060: RF_Axle
+    4300062: RR_Axle
+    4300064: RR_Tire
+    4300066: RR_Tire
+    4300068: RR_Rim
+    4300070: RR_Spokes
+    4300072: RF_Spokes
+    4300074: RF_Rim
+    4300076: RF_Tire
+    4300078: RF_Tire
+    4300080: RF_Axle
+    4300082: RR_Axle
+    4300084: RR_Tire
+    4300086: RR_Tire
+    4300088: RR_Rim
+    4300090: RR_Spokes
+    4300092: R_Headlight
+    4300094: R_Headlight
+    4300096: R_Back
+    4300098: L_Headlight
+    4300100: L_Headlight
+    4300102: L_Back
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
