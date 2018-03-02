@@ -14,10 +14,10 @@ void Wandering(){
 		print("Chicken is Wandering!");
 
 	// makes the animal wander
-	transform.Translate(Vector3.forward*moveSpeed*Time.deltaTime);
+	transform.Translate(Vector3.back*moveSpeed*Time.deltaTime);
 	int randomNum = Random.Range(0,360);
 	//Projects Raycast always forward
-	Vector3 fwd = transform.TransformDirection(Vector3.forward);
+	Vector3 fwd = transform.TransformDirection(-Vector3.forward);
 	RaycastHit hit;
 
 	// Draws the physical ray
