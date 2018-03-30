@@ -11,6 +11,15 @@ public class Bullet : MonoBehaviour {
 		StartCoroutine(DestroyBullet());
 	}
 	
+	void OnCollisionEnter(Collision other)
+	{
+		var hit = other.gameObject;
+		var health = hit.GetComponent<WolfHealth>();
+
+		if(health != null){
+			health.TakeDamage(damage);
+		}
+	}
 	// Update is called once per frame
 	// void Update () {
 		
