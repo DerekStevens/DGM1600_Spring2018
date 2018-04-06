@@ -28,10 +28,13 @@ public class NavWolfAI : MonoBehaviour {
 
 	void Start () {
 		state = GetComponent<Animator>();
-		distance = Vector3.Distance(player.position, transform.position); // Where is the play in relation the wolf?
+		
 	}
 
 	void Update () {
+		
+		distance = Vector3.Distance(player.position, transform.position); // Where is the play in relation the wolf?
+
 		//Alert
 		if(distance < alertDist && distance > attackDist){
 			print("Wolf sees player");
@@ -41,7 +44,7 @@ public class NavWolfAI : MonoBehaviour {
 		}
 		// Attacking
 		else if(distance <= alertDist){
-			print("");
+			print("Wolf is following");
 			direction = player.position - transform.position;
 			direction.y = 0;
 
@@ -64,9 +67,9 @@ public class NavWolfAI : MonoBehaviour {
 		else if(distance > alertDist){
 			timer += Time.deltaTime;
 
-				// state.SetBool("isFollowing",false);
-				// state.SetBool("isAttacking",false);
-				// state.SetBool("isWandering",true);
+				state.SetBool("isFollowing",false);
+				state.SetBool("isAttacking",false);
+				state.SetBool("isWandering",true);
 			
 			if (timer >= wanderTimer){
 				Vector3 newPos = RandomNavSphere(transform.position, wanderRadius, -1);
