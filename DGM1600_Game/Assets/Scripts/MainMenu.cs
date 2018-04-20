@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour {
 
 	public void LoadLevel(){
 		SceneManager.LoadScene(levelToLoad);
+		
 	}
 
 	public void LevelExit(){
