@@ -10,7 +10,13 @@ public class PlayerHealth : MonoBehaviour {
 
 	public Text hp;
 	public Text maxHP;
+	public Transform loseHUD;
+	public Transform PlayerCamera;
+	public Transform Shooter;
 
+	void Start () {
+		loseHUD.gameObject.SetActive(false);
+	}
 	void Update () {
 		hp.text = currentHealth.ToString();
 		maxHP.text = maxHealth.ToString();
@@ -20,6 +26,11 @@ public class PlayerHealth : MonoBehaviour {
 		currentHealth -= amount;
 		if(currentHealth <= 0){
 			currentHealth = 0;
+			loseHUD.gameObject.SetActive(true);
+			Time.timeScale = 0;
+			PlayerCamera.GetComponent<CamMouseLook>().enabled = false;
+			Shooter.GetComponent<Shoot>().enabled = false;
+			Cursor.lockState = CursorLockMode.None;
 			print("You're Dead! Game Over!");
 		}
 	}

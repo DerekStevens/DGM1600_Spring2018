@@ -7,12 +7,16 @@ public class NavWolfAI : MonoBehaviour {
 	// Public Variables
 	public Transform player; // Location of player.
 	public float speed;
+	public int damage;
+
 	// Wander
 	public float wanderRadius; // Radius where the wolf will wander.
 	public float wanderTimer; // How long the wolf will wander before changing direction.
+
 	// Detection
 	public float alertDist; // Distance at which the wolf is aware of the player.
 	public float attackDist; // Distance at which the wolf attacks.
+
 	// Private
 	private Animator state;
 	private Vector3 direction; // Vector3 (a point in space)
@@ -28,7 +32,7 @@ public class NavWolfAI : MonoBehaviour {
 
 	void Start () {
 		state = GetComponent<Animator>();
-		
+		distance = Vector3.Distance(player.position, transform.position);
 	}
 
 	void Update () {
@@ -41,25 +45,40 @@ public class NavWolfAI : MonoBehaviour {
 			state.SetBool("isFollowing",true);
 			state.SetBool("isWandering",false);
 			state.SetBool("isAttacking",false);
+			speed = speed + 2;
+			transform.LookAt(player);
+			transform.Translate(Vector3.forward*speed*Time.deltaTime);
 		}
+
 		// Attacking
 		else if(distance <= alertDist){
 			print("Wolf is following");
 			direction = player.position - transform.position;
 			direction.y = 0;
 
-			transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction),0.09f*Time.deltaTime);
+			//transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction),0.09f*Time.deltaTime);
 
-			transform.Translate(Vector3.forward*speed*Time.deltaTime);
+			//transform.Translate(Vector3.forward*speed*Time.deltaTime);
 
 			state.SetBool("isFollowing",true);
 			state.SetBool("isAttacking",false);
 			state.SetBool("isWandering",false);
 
+			speed = speed - 10;
+
+			transform.LookAt(player);
+			transform.Translate(Vector3.forward*speed*Time.deltaTime);
+
 			if(direction.magnitude <= attackDist){
 				state.SetBool("isFollowing",false);
 				state.SetBool("isAttacking",true);
-				state.SetBool("isWanering",false);
+				state.SetBool("isWandering",false);
+				var hit = player.gameObject;
+				var health = hit.GetComponent<PlayerHealth>();
+
+				if (health != null){
+					health.TakeDamage(damage);
+				}
 			}
 		}
 
@@ -77,10 +96,9 @@ public class NavWolfAI : MonoBehaviour {
 				timer = 0;
 			}
 		}
-
 	}
 
-	public static Vector3 RandomNavSphere(Vector3 origin, float dist, int layermask){
+	public static Vector3 RandomNavSphere(Vector3 origin, float dist, int layermask) {
 		Vector3 randDirection = Random.insideUnitSphere * dist;
 
 		randDirection += origin;
@@ -91,5 +109,4 @@ public class NavWolfAI : MonoBehaviour {
 
 		return navHit.position;
 	}
-
 }

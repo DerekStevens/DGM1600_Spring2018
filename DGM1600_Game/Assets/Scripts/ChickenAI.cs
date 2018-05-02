@@ -9,6 +9,7 @@ public class ChickenAI : MonoBehaviour {
 	public Transform target;
 	public Transform chickenPen;
 	public int points = 10;
+	public GameObject scoreManager;
 	void Start () {
 		// chickenPen = GameObject.Find("Chicken")
 	}
@@ -22,16 +23,16 @@ public class ChickenAI : MonoBehaviour {
 		}
 	}
 
-void OnCollisionEnter(Collision other){
-	if(other.gameObject.name == "Player"){
+	void OnCollisionEnter(Collision other){
+		if(other.gameObject.name == "Player"){
 		/* Destroy(gameObject); */
 		//Add points to score.
-		//scoreManager.AddPoints(points);
+		ScoreManager.AddPoints(points);
 		//Send chicken to chicken pen.
 		transform.position = chickenPen.position;
 		transform.rotation = chickenPen.rotation;
+		}
 	}
-}
 	// Update is called once per frame
 	void Update () {
 		
