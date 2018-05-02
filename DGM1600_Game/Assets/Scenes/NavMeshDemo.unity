@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -140,7 +140,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -275.59302, y: 59.000015}
+  m_AnchoredPosition: {x: -275.59302, y: 5.0000153}
   m_SizeDelta: {x: 178.83, y: 38.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &118945870
@@ -649,7 +649,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &381676502
 RectTransform:
   m_ObjectHideFlags: 0
@@ -908,7 +908,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -73, y: 59}
+  m_AnchoredPosition: {x: -73.00001, y: 5}
   m_SizeDelta: {x: 178.83, y: 38.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &879607344
@@ -1017,7 +1017,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 273, y: 202.1}
+  m_AnchoredPosition: {x: 273, y: 157.00607}
   m_SizeDelta: {x: 100.75, y: 40.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1000935707
@@ -1152,7 +1152,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1107853398
 Transform:
   m_ObjectHideFlags: 0
@@ -1535,7 +1535,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 352.29996, y: 203.2}
+  m_AnchoredPosition: {x: 352.29996, y: 158.10606}
   m_SizeDelta: {x: 69.79, y: 35.06}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1376306699
@@ -1551,7 +1551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winScore: 1000
   text: {fileID: 1376306700}
-  winText: {fileID: 381676503}
+  winHUD: {fileID: 0}
 --- !u!114 &1376306700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1623,7 +1623,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -142.45505, y: 59}
+  m_AnchoredPosition: {x: -142.45505, y: 5}
   m_SizeDelta: {x: 178.83, y: 38.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1442048340
@@ -1821,7 +1821,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -55.037506, y: 58.99994}
+  m_AnchoredPosition: {x: -55.037506, y: 4.999939}
   m_SizeDelta: {x: 178.83, y: 38.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1641210164
@@ -1985,6 +1985,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 356841452}
   speed: 10
+  damage: 0
   wanderRadius: 100
   wanderTimer: 15
   alertDist: 20
@@ -2517,6 +2518,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseHUD: {fileID: 1107853398}
+  PlayerCamera: {fileID: 0}
+  Shooter: {fileID: 0}
 --- !u!114 &1899709167
 MonoBehaviour:
   m_ObjectHideFlags: 0
